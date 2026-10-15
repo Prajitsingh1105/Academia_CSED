@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Secrets and local config (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build and test output
+dist/
+build/
+coverage/
+
+# Temp files
+*.tmp
+*.swp

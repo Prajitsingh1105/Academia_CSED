@@ -1,0 +1,39 @@
+{
+  "name": "academia-iam-auth-service",
+  "version": "1.0.0",
+  "description": "IAM & Auth Microservice for the Academia platform",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --detectOpenHandles --runInBand",
+    "migrate": "node src/db/migrate.js"
+  },
+  "keywords": [
+    "auth",
+    "iam",
+    "express",
+    "jwt",
+    "microservice",
+    "event-driven"
+  ],
+  "author": "Academia Core Team",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.7.1",
+    "express-validator": "^7.1.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^10.1.0",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
